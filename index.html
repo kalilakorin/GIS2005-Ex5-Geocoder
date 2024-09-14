@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Geocoder</title>
+</head>
+
+<body>
+  <p>This web site allows you to enter an address and display its location (called geocoding).</p>
+  <p>Enter an address:
+    <input id="userAddress" type="text" size="25" value="">
+    <br>
+    Examples: 
+    <br><ls>325 Broadway Boulder CO 80309</ls>
+    <br><ls>2190 Miller Drive Longmont CO 80501</ls>
+  </p>
+  <button type="button" onclick="getInputValue();">Find location!</button>
+  <button type="button" onclick="resetInputValue();">Reset values</button>
+  <p id="most-likely-coordinates"></p>
+  <div id="coordinates-table"></div>
+  <br>
+  <div id="geoResults"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
